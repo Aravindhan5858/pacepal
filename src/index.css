@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background-color:#ff9d41;
+    width: 100%;
+    min-height: 70px;
+    box-shadow: 0 2px 8px rgba(11, 41, 15, 0.08);
+    position: sticky;
+}
+
+
+.nav .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+}
+
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav .tx, .nav a.tx {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 8px 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav .tx:hover, .nav a.tx:hover {
+    color: #fff;
+}
+
+
+.nav > *:last-child {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.sr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 24px;
+    margin: 32px auto 24px auto;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+
+.bx {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 400px;
+    font-size: 15px;
+}
+
+
+.se {
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ea66316a;
+    color: #000100;
+    cursor: pointer;
+    font-weight: 700px;
+    font-family: 'sans-serif';
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+.se:hover {
+    background-color:rgb(255, 113, 61);
+    color: #fff;
+}
+
+.bo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    padding: 32px 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background:#ff9d41 ;
+    border-radius: 12px;
+}
+
+.bo > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f2ee;
+    padding: 18px 10px 16px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(15, 145, 50, 0.08);
+    transition: transform 0.15s;
+}
+.bo > div:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 18px rgba(15, 145, 50, 0.16);
+}
+
+.im {
+    height: 200px;
+    width: 100%;
+    max-width: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
